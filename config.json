@@ -1,0 +1,34 @@
+{
+  "base": {
+    "ADMINS": [
+      "marek.blaszczyk@gmail.com"
+    ],
+    "SECRET_KEY": "eghoo9Quohr5ahy1xa9oow7mooMahSh5",
+    "CSRF_SESSION_KEY": "hah2tae1va2ahf1eilahr7dooFohn5to",
+    "DEBUG": false,
+    "TESTING": false,
+    "CSRF_ENABLED": true,
+    "WTF_CSRF_ENABLED": true,
+    "DOMAIN": "http://localhost:5000",
+    "SQLALCHEMY_TRACK_MODIFICATION": false,
+    "SQLALCHEMY_DATABASE_URI": "postgresql://db_user:db_password@db_host/db_base",
+    "DATABASE_SCHEMA": "public",
+    "SQLALCHEMY_TRACK_MODIFICATIONS": false,
+    "BLUEPRINTS": [
+      "api_v1"
+    ]
+  },
+  "development": {
+    "DEBUG": true
+  },
+  "testing": {
+    "DEBUG": true,
+    "TESTING": true,
+    "CSRF_ENABLED": false,
+    "WTF_CSRF_ENABLED": false,
+    "SQLALCHEMY_DATABASE_URI": "sqlite:///:memory:"
+  },
+    "production": {
+    "DEBUG": false
+  }
+}

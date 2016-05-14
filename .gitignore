@@ -1,0 +1,11 @@
+.idea/
+.~*
+download/*
+*.pyc
+*.db
+env/
+activate
+coverage
+coverage.xml
+test-reports/
+pylint.out
